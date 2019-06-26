@@ -9,12 +9,13 @@ This project has been tested with:
 
 - Apple LLVM version 10.0.1 (clang-1001.0.46.4) Target: x86_64-apple-darwin18.6.0
 - gcc (Raspbian 8.3.0-6+rpi1) 8.3.0
+- Microsoft (R) C/C++ Optimizing Compiler Version 19.20.27508.1 for x86
 
 ## Including in Your Own Software
 The easiest thing to do at this stage is just to include the four source files (`PPlot.cpp`, `PPlot.h`, `SVGPainter.cpp`, and `SVGPainter.h`) in your project.
 
 ## Test Program
-SVGChart comes with a test program that will output eight test SVG charts, and one painting test SVG. Just run `make` and then `./test` to run them.
+SVGChart comes with a test program that will output eight test SVG charts, and one painting test SVG. Just run `make` (or `nmake` on Windows) and then `./test` (or `test` on Windows) to run them.
 
 ![ExamplePlot1](./ExamplePlot1.svg)
 ![ExamplePlot2](./ExamplePlot2.svg)
