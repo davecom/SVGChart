@@ -2,7 +2,7 @@
 A C++ Library for Making SVG Charts (fork of PPlot)
 
 ## Alpha Quality Software
-This is a fork of the [PPlot](http://pplot.sourceforge.net) plotting library. All of its documentation is still relevant. The big change is compliance with modern C++ compilers and a new SVGPainter that can output SVG files. This is at an alpha state of completion.
+This is a fork of the [PPlot](http://pplot.sourceforge.net) plotting library. All of its documentation is still relevant. The big change is compliance with modern C++ compilers and a new SVGPainter class that can output SVG files. This project is at an alpha state of completion.
 
 ## Compiler Support
 This project has been tested with:
@@ -11,7 +11,7 @@ This project has been tested with:
 - gcc (Raspbian 8.3.0-6+rpi1) 8.3.0
 
 ## Including in Your Own Software
-The easiest thing to do at this stage is just include the four source files (`PPlot.cpp`, `PPlot.h`, `SVGPainter.cpp`, and `SVGPainter.h` in your project).
+The easiest thing to do at this stage is just to include the four source files (`PPlot.cpp`, `PPlot.h`, `SVGPainter.cpp`, and `SVGPainter.h`) in your project.
 
 ## Test Program
 SVGChart comes with a test program that will output eight test SVG charts, and one painting test SVG. Just run `make` and then `./test` to run them.
