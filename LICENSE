@@ -19,3 +19,25 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Original PPlot.h copyright notice:
+
+/***************************************************************************
+ *                                                                         *
+ *   Copyright notice:                                                     *
+ *                                                                         *
+ *   This is free Pier ware. You may do whatever you want with this code.  *
+ *   You may cont(r)act me by email: pierphil@xs4all.nl                    *
+ *                                                                         *
+ ***************************************************************************/
+
+Original PPlot.cpp copyright notice:
+
+/***************************************************************************
+ *                                                                         *
+ *   Copyright notice:                                                     *
+ *                                                                         *
+ *   This is free Pier ware. You may do whatever you want with this code,  *
+ *    except that you should not remove this copyright notice.             *
+ *                                                                         *
+ ***************************************************************************/

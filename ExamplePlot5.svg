@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" baseProfile="full" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+<clipPath>
+<rect x="0" y="0" width="300" height="300" fill="rgb(0,0,0)" />
+</clipPath>
+<line x1="50" y1="258" x2="280" y2="258" stroke="rgb(0,0,0)" />
+<text x="50" y="282">jan</text>
+<line x1="50" y1="258" x2="50" y2="263" stroke="rgb(0,0,0)" />
+<text x="154" y="282">jun</text>
+<line x1="154.545" y1="258" x2="154.545" y2="263" stroke="rgb(0,0,0)" />
+<text x="259" y="282">nov</text>
+<line x1="259.091" y1="258" x2="259.091" y2="263" stroke="rgb(0,0,0)" />
+<line x1="50" y1="20" x2="50" y2="258" stroke="rgb(0,0,0)" />
+<text x="12" y="266">0</text>
+<line x1="50" y1="258" x2="45" y2="258" stroke="rgb(0,0,0)" />
+<line x1="50" y1="247.422" x2="47" y2="247.422" stroke="rgb(0,0,0)" />
+<line x1="50" y1="236.844" x2="47" y2="236.844" stroke="rgb(0,0,0)" />
+<line x1="50" y1="226.267" x2="47" y2="226.267" stroke="rgb(0,0,0)" />
+<line x1="50" y1="215.689" x2="47" y2="215.689" stroke="rgb(0,0,0)" />
+<text x="12" y="213">2</text>
+<line x1="50" y1="205.111" x2="45" y2="205.111" stroke="rgb(0,0,0)" />
+<line x1="50" y1="194.533" x2="47" y2="194.533" stroke="rgb(0,0,0)" />
+<line x1="50" y1="183.956" x2="47" y2="183.956" stroke="rgb(0,0,0)" />
+<line x1="50" y1="173.378" x2="47" y2="173.378" stroke="rgb(0,0,0)" />
+<line x1="50" y1="162.8" x2="47" y2="162.8" stroke="rgb(0,0,0)" />
+<text x="12" y="160">4</text>
+<line x1="50" y1="152.222" x2="45" y2="152.222" stroke="rgb(0,0,0)" />
+<line x1="50" y1="141.644" x2="47" y2="141.644" stroke="rgb(0,0,0)" />
+<line x1="50" y1="131.067" x2="47" y2="131.067" stroke="rgb(0,0,0)" />
+<line x1="50" y1="120.489" x2="47" y2="120.489" stroke="rgb(0,0,0)" />
+<line x1="50" y1="109.911" x2="47" y2="109.911" stroke="rgb(0,0,0)" />
+<text x="12" y="107">6</text>
+<line x1="50" y1="99.3333" x2="45" y2="99.3333" stroke="rgb(0,0,0)" />
+<line x1="50" y1="88.7555" x2="47" y2="88.7555" stroke="rgb(0,0,0)" />
+<line x1="50" y1="78.1777" x2="47" y2="78.1777" stroke="rgb(0,0,0)" />
+<line x1="50" y1="67.6" x2="47" y2="67.6" stroke="rgb(0,0,0)" />
+<line x1="50" y1="57.0222" x2="47" y2="57.0222" stroke="rgb(0,0,0)" />
+<text x="12" y="54">8</text>
+<line x1="50" y1="46.4444" x2="45" y2="46.4444" stroke="rgb(0,0,0)" />
+<line x1="50" y1="35.8667" x2="47" y2="35.8667" stroke="rgb(0,0,0)" />
+<line x1="50" y1="25.2889" x2="47" y2="25.2889" stroke="rgb(0,0,0)" />
+<text x="70" y="36">bar</text>
+<clipPath>
+<rect x="50" y="20" width="230" height="238" fill="rgb(0,0,0)" />
+</clipPath>
+<rect x="41" y="231" width="19" height="27" fill="rgb(100,100,200)" />
+<rect x="61" y="205" width="19" height="53" fill="rgb(100,100,200)" />
+<rect x="82" y="178" width="19" height="80" fill="rgb(100,100,200)" />
+<rect x="103" y="152" width="19" height="106" fill="rgb(100,100,200)" />
+<rect x="124" y="125" width="19" height="133" fill="rgb(100,100,200)" />
+<rect x="145" y="99" width="19" height="159" fill="rgb(100,100,200)" />
+<rect x="166" y="72" width="19" height="186" fill="rgb(100,100,200)" />
+<rect x="187" y="46" width="19" height="212" fill="rgb(100,100,200)" />
+<rect x="208" y="20" width="19" height="238" fill="rgb(100,100,200)" />
+<rect x="229" y="258" width="19" height="0" fill="rgb(100,100,200)" />
+<rect x="250" y="231" width="19" height="27" fill="rgb(100,100,200)" />
+<rect x="271" y="205" width="19" height="53" fill="rgb(100,100,200)" />
+</svg>
+
