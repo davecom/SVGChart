@@ -5,6 +5,7 @@
 <line x1="14" y1="154" x2="14" y2="10" stroke="rgb(0,0,0)" />
 <line x1="30" y1="154" x2="30" y2="10" stroke="rgb(0,0,0)" />
 <text x="30" y="154" transform="rotate(-90,30,154)">The quick brown fox...</text>
-<text x="46" y="26">The quick brown fox...</text>
+<text x="46" y="26" fill="rgb(0,0,0)">
+The quick brown fox...</text>
 </svg>
 

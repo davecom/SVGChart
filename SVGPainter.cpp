@@ -89,7 +89,9 @@ namespace SVGChart {
     }
     
     void SVGPainter::DrawText (int inX, int inY, const char *inString) {
-        svgContent << "<text x=\"" << inX << "\" y=\"" << inY << "\">";
+        svgContent << "<text x=\"" << inX << "\" y=\"" << inY;
+        svgContent << "\" fill=\"" << "rgb(" << lineRed << ",";
+        svgContent << lineGreen << "," << lineBlue << ")" << "\">\n";
         svgContent << inString << "</text>\n";
     }
     

@@ -3,54 +3,64 @@
 <clipPath>
 <rect x="0" y="0" width="300" height="300" fill="rgb(0,0,0)" />
 </clipPath>
-<text x="66" y="34">data selection and editing</text>
+<text x="66" y="34" fill="rgb(0,0,0)">
+data selection and editing</text>
 <line x1="50" y1="278.8" x2="280" y2="278.8" stroke="rgb(0,0,0)" />
-<text x="50" y="300">0.000</text>
+<text x="50" y="300" fill="rgb(0,0,0)">
+0.000</text>
 <line x1="50" y1="278" x2="50" y2="282" stroke="rgb(0,0,0)" />
 <line x1="73" y1="278" x2="73" y2="280" stroke="rgb(0,0,0)" />
 <line x1="96" y1="278" x2="96" y2="280" stroke="rgb(0,0,0)" />
 <line x1="119" y1="278" x2="119" y2="280" stroke="rgb(0,0,0)" />
 <line x1="142" y1="278" x2="142" y2="280" stroke="rgb(0,0,0)" />
-<text x="165" y="300">0.005</text>
+<text x="165" y="300" fill="rgb(0,0,0)">
+0.005</text>
 <line x1="165" y1="278" x2="165" y2="282" stroke="rgb(0,0,0)" />
 <line x1="188" y1="278" x2="188" y2="280" stroke="rgb(0,0,0)" />
 <line x1="211" y1="278" x2="211" y2="280" stroke="rgb(0,0,0)" />
 <line x1="234" y1="278" x2="234" y2="280" stroke="rgb(0,0,0)" />
 <line x1="257" y1="278" x2="257" y2="280" stroke="rgb(0,0,0)" />
-<text x="280" y="300">0.010</text>
+<text x="280" y="300" fill="rgb(0,0,0)">
+0.010</text>
 <line x1="280" y1="278" x2="280" y2="282" stroke="rgb(0,0,0)" />
 <line x1="50" y1="50" x2="50" y2="258" stroke="rgb(0,0,0)" />
 <line x1="50" y1="253.84" x2="47" y2="253.84" stroke="rgb(0,0,0)" />
 <line x1="50" y1="245.52" x2="47" y2="245.52" stroke="rgb(0,0,0)" />
-<text x="-4" y="245">0.02</text>
+<text x="-4" y="245" fill="rgb(0,0,0)">
+0.02</text>
 <line x1="50" y1="237.2" x2="45" y2="237.2" stroke="rgb(0,0,0)" />
 <line x1="50" y1="228.88" x2="47" y2="228.88" stroke="rgb(0,0,0)" />
 <line x1="50" y1="220.56" x2="47" y2="220.56" stroke="rgb(0,0,0)" />
 <line x1="50" y1="212.24" x2="47" y2="212.24" stroke="rgb(0,0,0)" />
 <line x1="50" y1="203.92" x2="47" y2="203.92" stroke="rgb(0,0,0)" />
-<text x="-4" y="203">0.04</text>
+<text x="-4" y="203" fill="rgb(0,0,0)">
+0.04</text>
 <line x1="50" y1="195.6" x2="45" y2="195.6" stroke="rgb(0,0,0)" />
 <line x1="50" y1="187.28" x2="47" y2="187.28" stroke="rgb(0,0,0)" />
 <line x1="50" y1="178.96" x2="47" y2="178.96" stroke="rgb(0,0,0)" />
 <line x1="50" y1="170.64" x2="47" y2="170.64" stroke="rgb(0,0,0)" />
 <line x1="50" y1="162.32" x2="47" y2="162.32" stroke="rgb(0,0,0)" />
-<text x="-4" y="161">0.06</text>
+<text x="-4" y="161" fill="rgb(0,0,0)">
+0.06</text>
 <line x1="50" y1="154" x2="45" y2="154" stroke="rgb(0,0,0)" />
 <line x1="50" y1="145.68" x2="47" y2="145.68" stroke="rgb(0,0,0)" />
 <line x1="50" y1="137.36" x2="47" y2="137.36" stroke="rgb(0,0,0)" />
 <line x1="50" y1="129.04" x2="47" y2="129.04" stroke="rgb(0,0,0)" />
 <line x1="50" y1="120.72" x2="47" y2="120.72" stroke="rgb(0,0,0)" />
-<text x="-4" y="120">0.08</text>
+<text x="-4" y="120" fill="rgb(0,0,0)">
+0.08</text>
 <line x1="50" y1="112.4" x2="45" y2="112.4" stroke="rgb(0,0,0)" />
 <line x1="50" y1="104.08" x2="47" y2="104.08" stroke="rgb(0,0,0)" />
 <line x1="50" y1="95.7599" x2="47" y2="95.7599" stroke="rgb(0,0,0)" />
 <line x1="50" y1="87.44" x2="47" y2="87.44" stroke="rgb(0,0,0)" />
 <line x1="50" y1="79.1199" x2="47" y2="79.1199" stroke="rgb(0,0,0)" />
-<text x="-3" y="78">0.10</text>
+<text x="-3" y="78" fill="rgb(0,0,0)">
+0.10</text>
 <line x1="50" y1="70.7999" x2="45" y2="70.7999" stroke="rgb(0,0,0)" />
 <line x1="50" y1="62.4799" x2="47" y2="62.4799" stroke="rgb(0,0,0)" />
 <line x1="50" y1="54.1599" x2="47" y2="54.1599" stroke="rgb(0,0,0)" />
-<text x="70" y="66">foo</text>
+<text x="70" y="66" fill="rgb(100,100,200)">
+foo</text>
 <clipPath>
 <rect x="50" y="50" width="230" height="208" fill="rgb(0,0,0)" />
 </clipPath>
