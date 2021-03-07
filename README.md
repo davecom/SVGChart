@@ -14,6 +14,11 @@ This project has been tested with:
 ## Including in Your Own Software
 The easiest thing to do at this stage is just to include the four source files (`PPlot.cpp`, `PPlot.h`, `SVGPainter.cpp`, and `SVGPainter.h`) in your project.
 
+## Examples
+Examples are in the `Examples` directory. For now, there is just one example of plotting average temperatures using a line chart. You can check out the code for a sense of how to use SVGChart.
+
+![TemperatureChart](Examples/Temperatures/AvgTempChart.svg)
+
 ## Test Program
 SVGChart comes with a test program that will output eight test SVG charts, and one painting test SVG. Just run `make` (or `nmake` on Windows) and then `./test` (or `test` on Windows) to run them.
 
