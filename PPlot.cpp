@@ -148,7 +148,7 @@ namespace SVGChart {
     void LegendData::SetDefaultValues (int inPlotIndex) {
         SetDefaultColor (inPlotIndex);
       char theBuf[32];
-      sprintf (theBuf, "plot %d", inPlotIndex);
+      snprintf (theBuf, 32, "plot %d", inPlotIndex);
       mName = theBuf;
     }
 
@@ -838,7 +838,7 @@ namespace SVGChart {
 
       if (mAxisSetup->mLogFactor>1) {
         char theBuf[128];
-        sprintf (theBuf, "%d", thePowNow*20);
+        snprintf (theBuf, 128, "%d", thePowNow*20);
         outFormatString = theBuf;
       }
 
@@ -1266,7 +1266,7 @@ namespace SVGChart {
       outRect.mW = 0;
       if (inMajor) {
         theTickSize = mXAxisSetup.mTickInfo.mMajorTickScreenSize;
-        sprintf (theBuf, inFormatString.c_str (), inX);
+        snprintf (theBuf, 128, inFormatString.c_str (), inX);
 
         outRect.mH = inPainter.GetFontHeight ()+theTickSize + mXAxisSetup.mTickInfo.mMinorTickScreenSize;;
         inPainter.DrawText (theScreenX, inScreenY+outRect.mH, theBuf);
@@ -1348,7 +1348,7 @@ namespace SVGChart {
       outRect.mH = 0;// not used
       if (inMajor) {
         theTickSize = mYAxisSetup.mTickInfo.mMajorTickScreenSize;
-        sprintf (theBuf, inFormatString.c_str (), inY);
+        snprintf (theBuf, 128, inFormatString.c_str (), inY);
         int theStringWidth = inPainter.CalculateTextDrawSize (theBuf);
         outRect.mX -= (theStringWidth+theTickSize+mYAxisSetup.mTickInfo.mMinorTickScreenSize);
         int theHalfFontHeight = inPainter.GetFontHeight ()/2;// for sort of vertical centralizing
