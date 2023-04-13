@@ -70,7 +70,7 @@ namespace SVGChart {
      public:
       virtual ~PlotDataBase ();
       virtual const RealPlotData * GetRealPlotData () const = 0;
-      virtual const CalculatedDataBase * GetCalculatedData () const {return 0;}
+      virtual const CalculatedDataBase * GetCalculatedData () const {return nullptr;}
       long GetSize () const;
       float GetValue (long inIndex) const;
 
@@ -112,7 +112,7 @@ namespace SVGChart {
           mCalculatedData (inCalculatedData) {}
         //~CalculatedPlotData () {delete mCalculatedData;}
 
-        virtual const RealPlotData * GetRealPlotData () const {return 0;}
+        virtual const RealPlotData * GetRealPlotData () const {return nullptr;}
         virtual const CalculatedDataBase * GetCalculatedData () const {return mCalculatedData;}
 
         CalculatedDataBase* mCalculatedData;
@@ -211,7 +211,7 @@ namespace SVGChart {
       virtual long GetFontHeight () const =0;
       virtual void DrawText (int inX, int inY, const char *inString)=0;
       virtual void DrawRotatedText (int inX, int inY, float inDegrees, const char *inString)=0;
-        virtual void SetStyle ([[maybe_unused]] const PStyle &inStyle) {};
+      virtual void SetStyle ([[maybe_unused]] const PStyle &inStyle) {};
     };
 
     class Trafo;
@@ -219,7 +219,7 @@ namespace SVGChart {
 
     class DataDrawerBase {
      public:
-      DataDrawerBase (): mXTrafo (0), mYTrafo (0), mDrawFast (false), mPlotCount (1), mPlotIndex (0) {};
+      DataDrawerBase (): mDrawFast (false), mPlotCount (1), mPlotIndex (0) {};
       virtual ~DataDrawerBase (){};
 
       void SetXTrafo (Trafo *inTrafo) {mXTrafo = inTrafo;};
@@ -232,8 +232,8 @@ namespace SVGChart {
 
       virtual DataDrawerBase* Clone () const = 0;
      protected:
-      Trafo *mXTrafo;
-      Trafo *mYTrafo;
+      Trafo *mXTrafo {nullptr};
+      Trafo *mYTrafo {nullptr};
       bool  mDrawFast;
       int   mPlotCount;
       int   mPlotIndex;
@@ -282,8 +282,8 @@ namespace SVGChart {
       void RemoveElement (int inIndex);
       void ClearData ();
 
-      void AddXYPlot (PlotDataBase *inXData, PlotDataBase *inYData, LegendData *inLegendData=0, DataDrawerBase *inDataDrawer=0, PlotDataSelection *inPlotDataSelection=0);//takes ownership
-      void SetXYPlot (int inIndex, PlotDataBase *inXData, PlotDataBase *inYData, LegendData *inLegendData=0, DataDrawerBase *inDataDrawer=0, PlotDataSelection *inPlotDataSelection=0);//takes ownership
+      void AddXYPlot (PlotDataBase *inXData, PlotDataBase *inYData, LegendData *inLegendData=nullptr, DataDrawerBase *inDataDrawer=nullptr, PlotDataSelection *inPlotDataSelection=nullptr);//takes ownership
+      void SetXYPlot (int inIndex, PlotDataBase *inXData, PlotDataBase *inYData, LegendData *inLegendData=nullptr, DataDrawerBase *inDataDrawer=nullptr, PlotDataSelection *inPlotDataSelection=nullptr);//takes ownership
 
       int GetPlotCount () const {return mYDataList.size ();};
 
@@ -404,7 +404,7 @@ namespace SVGChart {
 
     class TickIterator {
     public:
-      TickIterator ():mAxisSetup (0){};
+      TickIterator ():mAxisSetup (nullptr){};
       virtual ~TickIterator () {};
 
       virtual bool Init ()=0;
@@ -568,7 +568,7 @@ namespace SVGChart {
       LogTickIterator mYLogTickIterator;
       NamedTickIterator mXNamedTickIterator;
 
-      PDrawer * mPPlotDrawer;
+      PDrawer * mPPlotDrawer {nullptr};
       bool mOwnsPPlotDrawer;
     };
 

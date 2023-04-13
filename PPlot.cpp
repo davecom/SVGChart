@@ -45,7 +45,7 @@ namespace SVGChart {
 
     using namespace std;
 
-    static PPlot *sCurrentPPlot=0;
+    static PPlot *sCurrentPPlot { nullptr };
 
     const float kFloatSmall = 1e-20f;
     const float kLogMin = 1e-10f;// min argument for log10 function
@@ -312,70 +312,70 @@ namespace SVGChart {
 
     PlotDataBase * PlotDataContainer::GetXData (int inIndex) {
         if (inIndex < 0 || inIndex >= int(mXDataList.size())) {
-            return 0;
+            return nullptr;
         }
         return mXDataList[inIndex];
     }
 
     PlotDataBase * PlotDataContainer::GetYData (int inIndex) {
         if (inIndex < 0 || inIndex >= int(mYDataList.size())) {
-            return 0;
+            return nullptr;
         }
         return mYDataList[inIndex];
     }
 
     LegendData * PlotDataContainer::GetLegendData (int inIndex) {
         if (inIndex < 0 || inIndex >= int(mLegendDataList.size())) {
-            return 0;
+            return nullptr;
         }
         return mLegendDataList[inIndex];
     }
 
     DataDrawerBase * PlotDataContainer::GetDataDrawer (int inIndex) {
         if (inIndex < 0 || inIndex >= int(mDataDrawerList.size())) {
-            return 0;
+            return nullptr;
         }
         return mDataDrawerList[inIndex];
     }
 
     PlotDataSelection * PlotDataContainer::GetPlotDataSelection (int inIndex) {
         if (inIndex < 0 || inIndex >= int(mPlotDataSelectionList.size())) {
-            return 0;
+            return nullptr;
         }
         return mPlotDataSelectionList[inIndex];
     }
 
     const PlotDataBase * PlotDataContainer::GetConstXData (int inIndex) const {
         if (inIndex < 0 || inIndex >= int(mXDataList.size())) {
-            return 0;
+            return nullptr;
         }
         return mXDataList[inIndex];
     }
 
     const PlotDataBase * PlotDataContainer::GetConstYData (int inIndex) const {
         if (inIndex < 0 || inIndex >= int(mYDataList.size())) {
-            return 0;
+            return nullptr;
         }
         return mYDataList[inIndex];
     }
 
     const LegendData * PlotDataContainer::GetConstLegendData (int inIndex) const {
         if (inIndex < 0 || inIndex >= int(mLegendDataList.size())) {
-            return 0;
+            return nullptr;
         }
         return mLegendDataList[inIndex];
     }
 
     const DataDrawerBase * PlotDataContainer::GetConstDataDrawer (int inIndex) const {
         if (inIndex < 0 || inIndex >= int(mDataDrawerList.size())) {
-            return 0;
+            return nullptr;
         }
         return mDataDrawerList[inIndex];
     }
 
     const PlotDataSelection * PlotDataContainer::GetConstPlotDataSelection (int inIndex) const {
         if (inIndex < 0 || inIndex >= int(mPlotDataSelectionList.size())) {
-            return 0;
+            return nullptr;
         }
         return mPlotDataSelectionList[inIndex];
     }
@@ -948,7 +948,6 @@ namespace SVGChart {
       mYTickIterator (&mYLinTickIterator),
       mXTrafo (&mXLinTrafo),
       mYTrafo (&mYLinTrafo),
-      mPPlotDrawer (0),
       mOwnsPPlotDrawer (true)
     
     {
@@ -960,7 +959,6 @@ namespace SVGChart {
       if (mOwnsPPlotDrawer) {
         delete mPPlotDrawer;
       }
-      mPPlotDrawer = 0;
     }
 
     bool PPlot::Draw (Painter &inPainter) {
@@ -1656,7 +1654,7 @@ namespace SVGChart {
       else {
         const PlotDataBase *theGlue = mPlotDataContainer.GetConstXData (0);
         const StringData *theStringXData = dynamic_cast<const StringData *>(theGlue);
-        if (theStringXData != 0) {
+        if (theStringXData != nullptr) {
           mXTickIterator = &mXNamedTickIterator;
           mXNamedTickIterator.SetStringList (*(theStringXData->GetStringData ()));
         }
@@ -1940,7 +1938,7 @@ namespace SVGChart {
       }
       LineDataDrawer *theDataDrawer1 = new LineDataDrawer ();
       theDataDrawer1->mStyle.mPenWidth = 3;
-      ioPPlot.mPlotDataContainer.AddXYPlot (theX1, theY1, 0, theDataDrawer1);
+      ioPPlot.mPlotDataContainer.AddXYPlot (theX1, theY1, nullptr, theDataDrawer1);
       ioPPlot.mPlotBackground.mTitle = "Bar";
       ioPPlot.mPlotBackground.mStyle.mFontSize = 20;
       ioPPlot.mMargins.mTop = 60;
@@ -1982,7 +1980,7 @@ namespace SVGChart {
         theX1->push_back (theI);
         theY1->push_back (theFac*theI*theI*theI);
       }
-      ioPPlot.mPlotDataContainer.AddXYPlot (theX1, theY1, 0);
+      ioPPlot.mPlotDataContainer.AddXYPlot (theX1, theY1, nullptr);
 
       PlotData *theX2 = new PlotData ();
       PlotData *theY2 = new PlotData ();
@@ -1991,7 +1989,7 @@ namespace SVGChart {
         theX2->push_back (theI);
         theY2->push_back (-theFac*theI);
       }
-      ioPPlot.mPlotDataContainer.AddXYPlot (theX2, theY2, 0);
+      ioPPlot.mPlotDataContainer.AddXYPlot (theX2, theY2, nullptr);
 
       ioPPlot.mPlotBackground.mTitle = "no autoscale";
       ioPPlot.mPlotBackground.mStyle.mFontSize = 15;
@@ -2023,7 +2021,7 @@ namespace SVGChart {
         theX1->push_back (theI);
         theY1->push_back (theFac*theI*theI*theI);
       }
-      ioPPlot.mPlotDataContainer.AddXYPlot (0, theY1, 0);
+      ioPPlot.mPlotDataContainer.AddXYPlot (nullptr, theY1, nullptr);
 
       ioPPlot.mPlotBackground.mTitle = "narrow margins";
       ioPPlot.mPlotBackground.mTransparent = false;
@@ -2092,7 +2090,7 @@ namespace SVGChart {
       LineDataDrawer *theDataDrawer1 = new LineDataDrawer ();
       theDataDrawer1->mDrawPoint = true;
       theDataDrawer1->mStyle.mPenWidth = 3;
-      ioPPlot.mPlotDataContainer.AddXYPlot (theX1, theY1, 0, theDataDrawer1);
+      ioPPlot.mPlotDataContainer.AddXYPlot (theX1, theY1, nullptr, theDataDrawer1);
 
       PlotData *theX2 = new PlotData ();
       PlotData *theY2 = new PlotData ();
@@ -2103,7 +2101,7 @@ namespace SVGChart {
       LineDataDrawer *theDataDrawer2 = new LineDataDrawer ();
       theDataDrawer2->mDrawPoint = true;
       theDataDrawer2->mDrawLine = false;
-      ioPPlot.mPlotDataContainer.AddXYPlot (theX2, theY2, 0, theDataDrawer2);
+      ioPPlot.mPlotDataContainer.AddXYPlot (theX2, theY2, nullptr, theDataDrawer2);
 
       ioPPlot.mMargins.mLeft = 50;
       ioPPlot.mMargins.mTop = 20;
@@ -2146,7 +2144,7 @@ namespace SVGChart {
       theLegend->mColor = PColor (100,100,200);
 
       PlotDataSelection *thePlotDataSelection = new PlotDataSelection ();
-      ioPPlot.mPlotDataContainer.AddXYPlot (theX1, theY1, theLegend, 0, thePlotDataSelection);
+      ioPPlot.mPlotDataContainer.AddXYPlot (theX1, theY1, theLegend, nullptr, thePlotDataSelection);
       ioPPlot.mMargins.mLeft = 50;
       ioPPlot.mMargins.mTop = 50;
 
